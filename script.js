@@ -1,4 +1,12 @@
-ffunction firstChar(text) {
+function firstChar(text) {
+  // Remove leading and trailing spaces
+  text = text.trim();
+  
+  // Check if the string is empty after trimming
+  if (text === '') {
+    return '';
+  }
+  
   // Iterate over each character in the string
   for (let char of text) {
     // Check if the character is not a space
